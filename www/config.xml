@@ -80,6 +80,10 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   
+    <!-- Core plugins -->
+    <plugin name="org.apache.cordova.console" />
+    <plugin name="org.apache.cordova.device" />
+  
 	<!-- inappbrowser -->
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
