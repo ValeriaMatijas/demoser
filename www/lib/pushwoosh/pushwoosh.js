@@ -4,13 +4,15 @@ var PUSHWOOSH_APP_ID = "603B4-CD8F9";
 
 function initPushwoosh()
 {      
-    //alert("initPushwoosh");
+    alert("initPushwoosh");
     if(ionic.Platform.isIOS() == true)       
     {
+        alert("IOS");
         registerPushwooshIOS(); 
     }
     else if(ionic.Platform.isAndroid() == true)
     {               
+        alert("ANDROID");
         registerPushwooshAndroid();
     }
     else
@@ -24,6 +26,7 @@ function initPushwoosh()
 ************** ANDROID ***********************
 **********************************************/
 function registerPushwooshAndroid(){    
+    alert("registerPushwooshAndroid0");
     var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
  
     alert("registerPushwooshAndroid1");
