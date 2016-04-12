@@ -1,10 +1,10 @@
-var GOOGLE_PROJECT_ID = "appser-1279";
+var GOOGLE_PROJECT_ID = "987627184555";
 var PUSHWOOSH_APP_ID = "603B4-CD8F9";
 
 
 function initPushwoosh()
 {      
-    alert("initPushwoosh");
+    //alert("initPushwoosh");
     if(ionic.Platform.isIOS() == true)       
     {
         registerPushwooshIOS(); 
@@ -28,8 +28,7 @@ function registerPushwooshAndroid(){
     //var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
     var pushNotification = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
- 
-    alert("registerPushwooshAndroid1");
+
     //set push notifications handler
     document.addEventListener('push-notification', function(event) {
         var title = event.notification.title;
@@ -52,8 +51,7 @@ function registerPushwooshAndroid(){
         //alert("Title: " + title);
     });
     
-    alert("registerPushwooshAndroid2");
-
+    
     //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_ID", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
     pushNotification.onDeviceReady({ projectid: GOOGLE_PROJECT_ID, pw_appid : PUSHWOOSH_APP_ID });
  
