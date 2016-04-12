@@ -10,7 +10,7 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams', 'Utils', funct
   	alert("AVL: " + avl);
     //alert("click!");
     var ID = "LauRozRub";
-    window.open("fb://profile/" + ID, '_system');
+    //window.open("fb://profile/" + ID, '_system');
     //window.open("https://www.facebook.com/choicefm1043");
 
   };  

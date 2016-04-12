@@ -81,7 +81,7 @@
   </platform>
   
 	<!-- inappbrowser -->
-	<plugin name="org.li8.inappbrowser" source="pgb" />
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
 	<!-- TW/FB availability -->
 	<gap:plugin name="com.ohh2ahh.plugins.appavailability" />
