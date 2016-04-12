@@ -81,6 +81,8 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   
+	<preference name="android-build-tool" value="gradle" /> 
+  
     <!-- Core plugins -->
     <plugin name="org.apache.cordova.console" />
     <plugin name="org.apache.cordova.device" />
