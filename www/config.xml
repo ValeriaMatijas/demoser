@@ -84,5 +84,8 @@
 	<!-- Whitelist -->
 	<plugin name="cordova-plugin-whitelist" spec="1.0.0"/>	
 	<access origin="*.pushwoosh.com" />
+	
+	<!-- Pushwoosh -->
+	<gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
 
 </widget>
