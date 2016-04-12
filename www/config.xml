@@ -87,18 +87,7 @@
 	<!-- inappbrowser -->
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
-	<!-- TW/FB availability -->
-	<plugin name="com.ohh2ahh.plugins.appavailability" />
-	
-	<feature name="InAppBrowser" >
-	<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" / >
-	</feature >
-	<feature name="AppAvailability" >
-	<param name="android-package" value="com.ohh2ahh.appavailability.AppAvailability" / >
-	</feature > 
-	<access origin="twitter://user?screen_name=lhollowmanl" / >
-
-  
+	  
 	<!-- Pushwoosh -->
 	<plugin name="pushwoosh-pgb-plugin" source="npm" />
   

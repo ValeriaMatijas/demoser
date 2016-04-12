@@ -7,9 +7,9 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cord
   self.clickBoton = function()
   {
   	
-  	var fbAvailable = Utils.appTwitterAvailability();
+  	//var fbAvailable = Utils.appTwitterAvailability();
 
-  	alert("fbAvailable: " + fbAvailable);
+  	//alert("fbAvailable: " + fbAvailable);
 
   	/*if(fbAvailable == true)
   	{
@@ -21,6 +21,7 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cord
   	}*/
     //alert("click!");
     var ID = "LauRozRub";
+    window.open("fb://profile/" + ID, '_system', 'location=no');
     
     //window.open("https://www.facebook.com/choicefm1043");
 

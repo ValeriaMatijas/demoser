@@ -15,7 +15,7 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 	}
 
 
-	self.appTwitterAvailability = function()
+	/*self.appTwitterAvailability = function()
 	{
 		var scheme;
 		// Don't forget to add the cordova-plugin-device plugin for `device.platform`
@@ -50,7 +50,7 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 			return false;
 		}
 
-	}
+	}*/
  
 }]);
 
