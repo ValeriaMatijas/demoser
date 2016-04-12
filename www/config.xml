@@ -85,7 +85,7 @@
     <plugin name="org.apache.cordova.device" />
   
 	<!-- inappbrowser -->
-	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<!--<plugin name="cordova-plugin-inappbrowser" source="npm" />-->
 	
 	  
 	<!-- Pushwoosh -->

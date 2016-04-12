@@ -15,7 +15,7 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 	}
 
 
-	/*self.appTwitterAvailability = function()
+	self.appTwitterAvailability = function()
 	{
 		var scheme;
 		// Don't forget to add the cordova-plugin-device plugin for `device.platform`
@@ -29,10 +29,12 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 		}
 
 	
-		if(typeof $cordovaAppAvailability != 'undefined')
+		//if(typeof $cordovaAppAvailability != 'undefined')
+		if(typeof appAvailability != 'undefined')
 		{
 			alert("entrando...");
-			$cordovaAppAvailability.check(
+			//$cordovaAppAvailability.check(
+			appAvailability.check(
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
 			        alert(scheme + ' is available :)');
@@ -50,7 +52,7 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 			return false;
 		}
 
-	}*/
+	}
  
 }]);
 
