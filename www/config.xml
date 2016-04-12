@@ -17,6 +17,7 @@
 	
   <content src="index.html"/>
   <access origin="*"/>
+
   
   <preference name="phonegap-version" value="cli-6.0.0" /> 
    
@@ -78,4 +79,10 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
+  
+  
+	<!-- Whitelist -->
+	<plugin name="cordova-plugin-whitelist" spec="1.0.0"/>	
+	<access origin="*.pushwoosh.com" />
+
 </widget>
