@@ -9,7 +9,7 @@ angular.module('ser', ['ionic']).run(function($ionicPlatform) {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
 
-    alert("inicializando: " +window.cordova);
+    //alert("inicializando: " +window.cordova);
     
 
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -24,7 +24,7 @@ angular.module('ser', ['ionic']).run(function($ionicPlatform) {
       window.StatusBar.styleDefault();
     }
 
-    alert("inicializando3: " +window.cordova );
+    alert("inicializando33: " +window.cordova );
     initPushwoosh();
   });
 });

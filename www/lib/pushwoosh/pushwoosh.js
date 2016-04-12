@@ -4,22 +4,22 @@ var PUSHWOOSH_APP_ID = "603B4-CD8F9";
 
 function initPushwoosh()
 {    
-    if (typeof device != 'undefined')
+  
+    alert("initPushwoosh");
+    if(ionic.Platform.isIOS() == true)       
     {
-        alert("initPushwoosh");
-        if(ionic.Platform.isIOS() == true)       
-        {
-            //registerPushwooshIOS(); 
-        }
-        else
-        {               
-            //registerPushwooshAndroid();
-        }
+        //registerPushwooshIOS(); 
+    }
+    else if(ionic.Platform.isAndroid() == true)
+    {               
+        //registerPushwooshAndroid();
     }
     else
     {
         alert("NO init initPushwoosh");
     }
+    
+    
 }
 
 
