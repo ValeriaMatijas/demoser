@@ -40,8 +40,6 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
       self.closeLogin();
     }, 1000);*/
 
-    alert("doLogin!");
-
     var promise = Server.login( self.loginData.username, self.loginData.password);
     promise.then(self.onLoginOK, self.onLoginKO);  
 
