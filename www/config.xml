@@ -80,6 +80,9 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   
+	<!-- inappbrowser -->
+	<plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
+  
 	<!-- Pushwoosh -->
 	<gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
   
@@ -87,6 +90,7 @@
 	<!-- Whitelist -->
 	<plugin name="cordova-plugin-whitelist" spec="1.0.0"/>	
 	<access origin="*.pushwoosh.com" />
+	<access origin="*"/>
 	
 	
 
