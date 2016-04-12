@@ -7,12 +7,10 @@ function initPushwoosh()
     alert("initPushwoosh");
     if(ionic.Platform.isIOS() == true)       
     {
-        alert("IOS");
         registerPushwooshIOS(); 
     }
     else if(ionic.Platform.isAndroid() == true)
     {               
-        alert("ANDROID");
         registerPushwooshAndroid();
     }
     else
