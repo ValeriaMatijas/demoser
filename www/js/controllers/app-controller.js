@@ -10,7 +10,7 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
    var self = this;
 
    // Open the login modal
-  $scope.login = function() {
+  self.login = function() {
     self.modal.show();
   };
 
