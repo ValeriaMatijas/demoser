@@ -1,5 +1,8 @@
-angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', function( $stateParams, Utils) {
+angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cordovaInAppBrowser', function( $stateParams, Utils, $cordovaInAppBrowser) {
   var self = this;
+
+ //console.log("$cordovaInAppBrowser: " + $cordovaInAppBrowser);
+  //console.log(" $cordovaAppAvailability: " +  $cordovaAppAvailability);
 
   self.clickBoton = function()
   {

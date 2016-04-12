@@ -24,7 +24,7 @@ angular.module('ser', ['ionic', 'ngCordova', 'ngStorage']).run(function($ionicPl
       window.StatusBar.styleDefault();
     }
 
-    console.log("INIT: " +  $cordovaPlugin);
+    //console.log("INIT: " +  $cordovaPlugin);
 
     //alert("inicializando: " +window.cordova );
     initPushwoosh();

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ser').service('Utils', ['Configuration', function(Configuration) 
+angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailability', function(Configuration, $cordovaAppAvailability) 
 {
 
 	var self = this;
@@ -29,10 +29,10 @@ angular.module('ser').service('Utils', ['Configuration', function(Configuration)
 		}
 
 	
-		if(typeof appAvailability != 'undefined')
+		if(typeof $cordovaAppAvailability != 'undefined')
 		{
 			alert("entrando...");
-			appAvailability.check(
+			$cordovaAppAvailability.check(
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
 			        alert(scheme + ' is available :)');
