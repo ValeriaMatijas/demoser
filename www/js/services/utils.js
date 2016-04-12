@@ -38,11 +38,11 @@ angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailabilit
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
 			        alert(scheme + ' is available :)');
-			        return true;
+			        //return true;
 			    },
 			    function() {  // Error callback
 			        alert(scheme + ' is not available :(');
-			        return false;
+			        //return false;
 			    }
 			);
 		}
