@@ -8,7 +8,7 @@ function initPushwoosh()
     if (typeof device != 'undefined')
     {
         alert("initPushwoosh2");
-        if(device.platform.toUpperCase() == "IPHONE" || device.platform.toUpperCase() == "IOS")       
+        if(ionic.Platform.isIOS() == true)
         {
             //registerPushwooshIOS(); 
         }

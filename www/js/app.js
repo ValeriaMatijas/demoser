@@ -10,18 +10,22 @@ angular.module('ser', ['ionic']).run(function($ionicPlatform) {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
 
+    alert("inicializando: " +window);
+    
 
     if (window.cordova && window.cordova.plugins.Keyboard) {
+      alert("inicializando1: " +window.cordova);
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
 
     }
     if (window.StatusBar) {
+        alert("inicializando2: " +window.StatusBar);
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      window.StatusBar.styleDefault();
     }
 
-    alert("inicializando2: " +window.cordova );
+    alert("inicializando3: " +window.cordova );
     ref.initPushwoosh();
   });
 });
