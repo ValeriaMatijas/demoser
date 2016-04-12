@@ -3,8 +3,10 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams', function( $sta
 
   self.clickBoton = function()
   {
-    console.log("click!");
-    var ID = "humorcabron";
-    window.open("facebook://" + ID, '_system');
+    //alert("click!");
+    //var ID = "LauRozRub";
+    //window.open("fb://profile/" + ID, '_system');
+     window.open("https://www.facebook.com/choicefm1043");
+
   };  
 }]);
