@@ -29,10 +29,10 @@ angular.module('ser').service('Utils', ['Configuration', function(Configuration)
 		}
 
 	
-		if(typeof $cordovaPlugin != 'undefined')
+		if(typeof appAvailability != 'undefined')
 		{
 			alert("entrando...");
-			$cordovaPlugin.check(
+			appAvailability.check(
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
 			        alert(scheme + ' is available :)');
