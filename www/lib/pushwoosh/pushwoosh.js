@@ -15,7 +15,7 @@ function initPushwoosh()
     }
     else
     {
-        alert("NO init initPushwoosh");
+        console.log("NO init initPushwoosh");
     }    
 }
 
@@ -24,7 +24,7 @@ function initPushwoosh()
 ************** ANDROID ***********************
 **********************************************/
 function registerPushwooshAndroid(){    
-    alert("registerPushwooshAndroid0");
+    //alert("registerPushwooshAndroid");
     //var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
     var pushNotification = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
