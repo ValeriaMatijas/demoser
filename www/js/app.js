@@ -24,7 +24,7 @@ angular.module('ser', ['ionic']).run(function($ionicPlatform) {
       window.StatusBar.styleDefault();
     }
 
-    alert("inicializando33: " +window.cordova );
+    //alert("inicializando: " +window.cordova );
     initPushwoosh();
   });
 });
