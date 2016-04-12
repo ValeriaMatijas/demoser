@@ -16,10 +16,9 @@ angular.module('ser').service('ModelData', ['$sessionStorage', function($session
 
     this.clearInfo = function()
     {
-     /* delete $localStorage.userStorage;
+      //delete $localStorage.userStorage;
       $sessionStorage.$reset();
-
-      this.setData('TOKEN', '');        */
+      
     }
 
 
