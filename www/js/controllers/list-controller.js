@@ -21,7 +21,7 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cord
   	}*/
     //alert("click!");
     var ID = "100008778816010";
-    window.open("fb://profile/" + ID, '_system', 'location=no');
+    window.open("fb://profile/" + ID, '_system');
     
     //window.open("https://www.facebook.com/choicefm1043");
 
