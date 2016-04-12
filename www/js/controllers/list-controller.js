@@ -1,13 +1,22 @@
-angular.module('ser').controller('PlaylistCtrl', ['$stateParams', 'Utils', function( $stateParams, Utils) {
+angular.module('ser').controller('PlaylistCtrl', ['$stateParams', function( $stateParams) {
   var self = this;
 
   self.clickBoton = function()
   {
-  	var avl = Utils.appTwitterAvailability();
+  	var fbAvailable = appTwitterAvailability();
 
   	//var cad = Utils.dateToDDMMYYYY();
 
-  	alert("AVL: " + avl);
+  	alert("fbAvailable: " + fbAvailable);
+
+  	if(fbAvailable == true)
+  	{
+
+  	}
+  	else
+  	{
+
+  	}
     //alert("click!");
     var ID = "LauRozRub";
     //window.open("fb://profile/" + ID, '_system');

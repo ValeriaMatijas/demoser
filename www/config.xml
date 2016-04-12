@@ -84,7 +84,7 @@
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
 	<!-- TW/FB availability -->
-	<plugin name="com.ohh2ahh.plugins.appavailability" />
+	<plugin name="com.ohh2ahh.plugins.appavailability"  source="npm" />
   
 	<!-- Pushwoosh -->
 	<plugin name="pushwoosh-pgb-plugin" source="npm" />
