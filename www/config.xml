@@ -84,10 +84,10 @@
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
 	<!-- TW/FB availability -->
-	<gap:plugin name="com.ohh2ahh.plugins.appavailability" />
+	<plugin name="com.ohh2ahh.plugins.appavailability" />
   
 	<!-- Pushwoosh -->
-	<gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+	<plugin name="pushwoosh-pgb-plugin" source="npm" />
   
   
 	<!-- Whitelist -->
