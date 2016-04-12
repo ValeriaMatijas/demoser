@@ -1,25 +1,25 @@
 'use strict';
 
-angular.module('ser').service('ModelData', ['$localStorage', '$sessionStorage', function($localStorage, $sessionStorage) 
+angular.module('ser').service('ModelData', [function() 
 {
 
     this.setData = function(id, val)
     {
-        $sessionStorage[id] = val;
+        //$sessionStorage[id] = val;
     }
 
     this.getData = function (id) 
     {
-        return  $sessionStorage[id];
+        //return  $sessionStorage[id];
     }
 
 
     this.clearInfo = function()
     {
-      delete $localStorage.userStorage;
+     /* delete $localStorage.userStorage;
       $sessionStorage.$reset();
 
-      this.setData('TOKEN', '');        
+      this.setData('TOKEN', '');        */
     }
 
 

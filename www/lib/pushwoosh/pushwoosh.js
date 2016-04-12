@@ -4,7 +4,6 @@ var PUSHWOOSH_APP_ID = "603B4-CD8F9";
 
 function initPushwoosh()
 {    
-    //if(this.isIOS() == true)
     if (typeof device != 'undefined')
     {
         alert("initPushwoosh");
@@ -19,7 +18,7 @@ function initPushwoosh()
     }
     else
     {
-        console.log("NO init initPushwoosh");
+        alert("NO init initPushwoosh");
     }
 }
 
@@ -27,8 +26,7 @@ function initPushwoosh()
 /*********************************************
 ************** ANDROID ***********************
 **********************************************/
-function registerPushwooshAndroid(){
-    var app = com.spyko.app.controller.Application.getInstance();
+function registerPushwooshAndroid(){    
     var pushNotification = cordova.require("com.pushwoosh.plugins.pushwoosh.PushNotification");
  
     //set push notifications handler
@@ -61,16 +59,11 @@ function registerPushwooshAndroid(){
     pushNotification.registerDevice(
         function(status) {
             var pushToken = status;
-            //alert('push token: ' + pushToken);
+            alert('registerDevice: ' + pushToken);
             onPushwooshInitialized();
         },
         function(status) {
-            //console.log(JSON.stringify(['failed to register ', status]));
-            /*var app = com.spyko.app.controller.Application.getInstance();            
-            var md = com.spyko.app.model.ModelData.getInstance();            
-            
-            md.setData(com.spyko.app.model.ModelData.HWID, "");
-            app.onPushwooshInit();*/
+            //console.log(JSON.stringify(['failed to register ', status]));           
         }
     );
 }
@@ -110,7 +103,7 @@ function registerPushwooshIOS() {
     pushNotification.registerDevice(
         function(status) {
             var deviceToken = status['deviceToken'];
-            //alert('registerDevice: ' + deviceToken);
+            alert('registerDevice: ' + deviceToken);
             onPushwooshInitialized();
         },
         function(status) {
