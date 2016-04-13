@@ -29,11 +29,11 @@ angular.module('ser').service('Utils', ['Configuration', function(Configuration)
 		}
 
 	
-		//if(typeof $cordovaAppAvailability != 'undefined')
+		
 		if(typeof appAvailability != 'undefined')
 		{
 			alert("entrando...");
-			//$cordovaAppAvailability.check(
+			
 			appAvailability.check(
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
