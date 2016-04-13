@@ -30,6 +30,16 @@ angular.module('ser').config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
+  .state('app.eventos-cat', {
+      url: '/eventos-cat/:idEventCat',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/events-cat.html',
+          controller: 'EventsCatCtrl',
+          controllerAs: 'ctrl'
+        }
+      }
+    })
   .state('app.evento', {
       url: '/evento/:idEvent',
       views: {
@@ -64,5 +74,5 @@ angular.module('ser').config(function($stateProvider, $urlRouterProvider) {
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/noticias');
+  $urlRouterProvider.otherwise('/app/home');
 });
