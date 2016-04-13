@@ -92,14 +92,14 @@
     <plugin name="org.apache.cordova.device" />
   
 	<!-- inappbrowser -->
-	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<!--<plugin name="cordova-plugin-inappbrowser" source="npm" />-->
 	
 	
 	  
 	<!-- Pushwoosh -->
 	<plugin name="pushwoosh-pgb-plugin" source="npm" />
 	
-	<plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />
+	<!--<plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />-->
   
   
 	<!-- Whitelist -->
