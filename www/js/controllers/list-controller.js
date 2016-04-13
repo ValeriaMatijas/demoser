@@ -20,7 +20,8 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cord
 		//window.open('https://www.google.es', '_system', 'location=no'); }
   	}*/
     //alert("click!");
-    var ID = "100008778816010";
+    //var ID = "100008778816010";
+    var ID = "pepe";
     //window.open("fb://profile/" + ID, '_system');
     //window.open('https://www.google.es', '_system', 'location=no');
     //window.open("fb://profile/" + ID, '_system');
