@@ -1,0 +1,9 @@
+<ion-view view-title="Noticias">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="new in ctrl.news" href="#/app/noticia/{{new.id}}">
+        {{new.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

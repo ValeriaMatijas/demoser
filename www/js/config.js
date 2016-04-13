@@ -9,44 +9,60 @@ angular.module('ser').config(function($stateProvider, $urlRouterProvider) {
     controllerAs: 'ctrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.home', {
+    url: '/home',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/home.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'ctrl'        
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.eventos', {
+      url: '/eventos',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/events.html',
+          controller: 'EventsCtrl',
+          controllerAs: 'ctrl'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+  .state('app.evento', {
+      url: '/evento/:idEvent',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl',
+          templateUrl: 'templates/event.html',
+          controller: 'EventCtrl',
           controllerAs: 'ctrl'
         }
       }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+
+  .state('app.noticias', {
+      url: '/noticias',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/news.html',
+          controller: 'NewsCtrl',
+          controllerAs: 'ctrl'
+        }
+      }
+    })
+
+  .state('app.noticia', {
+    url: '/noticia/:idNew',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl',
+        templateUrl: 'templates/new.html',
+        controller: 'NewCtrl',
         controllerAs: 'ctrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/noticias');
 });

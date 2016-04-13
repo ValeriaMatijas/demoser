@@ -71,7 +71,7 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
 
         self.closeLogin();
         //Common.goTo('app.browse');       
-        Common.goTo('app.single', {playlistId:3});       
+        Common.goTo('app.evento', {idEvent:3});       
 
       }
      

@@ -1,8 +1,10 @@
-angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', function( $stateParams, Utils) {
+angular.module('ser').controller('NewCtrl', ['$stateParams','Utils', function( $stateParams, Utils) {
   var self = this;
 
- //console.log("$cordovaInAppBrowser: " + $cordovaInAppBrowser);
-  //console.log(" $cordovaAppAvailability: " +  $cordovaAppAvailability);
+  self.init = function()
+  {
+    console.log("INIT NEW: " + $stateParams.idNew);
+  }  
 
   self.clickBoton = function()
   {
@@ -34,4 +36,6 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', functi
     //window.open("https://www.facebook.com/choicefm1043");
 
   };  
+
+  self.init();
 }]);
