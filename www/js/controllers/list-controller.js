@@ -6,12 +6,12 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', functi
 
   self.clickBoton = function()
   {
-  	//alert("1: " + cordova);
-  	alert("2: " + cordova.InAppBrowser);
-  	alert("3: " + "---");
+  	///alert("1: " + cordova);
+  	//alert("2: " + cordova.InAppBrowser);
+  	//alert("3: " + "---");
   	//alert("3: " + cordova.InAppBrowser.open);
   	
-  	//var fbAvailable = Utils.appTwitterAvailability();
+  	var fbAvailable = Utils.appTwitterAvailability();
 
   	//alert("fbAvailable: " + fbAvailable);
 

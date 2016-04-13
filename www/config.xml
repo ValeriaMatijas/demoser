@@ -93,19 +93,18 @@
 	<gap:plugin name="org.apache.cordova.core.geolocation" />
 	<gap:plugin name="com.adobe.plugins.gaplugin" />
     <plugin name="org.apache.cordova.console" />
-	
-    <!--<plugin name="org.apache.cordova.device" />-->
+
   
 	<!-- inappbrowser -->
 	<!--<plugin name="cordova-plugin-inappbrowser" source="npm" />-->
 	<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
-	
+	<plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />
 	
 	  
 	<!-- Pushwoosh -->
 	<plugin name="pushwoosh-pgb-plugin" source="npm" />
 	
-	<!--<plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />-->
+	
   
   
 	<!-- Whitelist -->
