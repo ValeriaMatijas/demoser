@@ -30,12 +30,11 @@ angular.module('ser').service('Utils', ['Configuration', function(Configuration)
 
 	
 		
-		//if(typeof appAvailability != 'undefined')
-		if(true)
+		if(typeof AppAvailability != 'undefined')
 		{
 			alert("entrando...");
 			
-			appAvailability.check(
+			AppAvailability.check(
 			    scheme,       // URI Scheme or Package Name
 			    function() {  // Success callback
 			        alert(scheme + ' is available :)');
