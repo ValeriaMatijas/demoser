@@ -94,6 +94,7 @@
 	<!-- inappbrowser -->
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	
+	
 	  
 	<!-- Pushwoosh -->
 	<plugin name="pushwoosh-pgb-plugin" source="npm" />
