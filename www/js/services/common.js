@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ser').service('Common', ['Configuration' ,'ModelData', '$state', '$location', function(Configuration, ModelData, $state, $location) 
+angular.module('ser').service('Common', ['Configuration' ,'ModelData', 'Types', '$state', '$location', function(Configuration, ModelData, Types, $state, $location) 
 {
  	this.goTo = function(url, params)
   {
@@ -16,10 +16,15 @@ angular.module('ser').service('Common', ['Configuration' ,'ModelData', '$state',
 	}
 
 
-	this.logOut = function()
+	/*this.logOut = function()
   {                     
      ModelData.clearInfo();  
      this.goTo('login');      
+  }*/
+
+  this.isMenuProfessional = function()
+  {      
+      return ModelData.getData("menu") === Types.MENU_PROFESIONAL;      
   }
 
   this.isMobile = function()

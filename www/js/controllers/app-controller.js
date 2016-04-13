@@ -1,4 +1,4 @@
-angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout', 'Server', 'Common', 'ModelData', function($scope, $ionicModal, $timeout, Server, Common, ModelData) {
+angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout', 'Server', 'Common', 'ModelData', 'Types', function($scope, $ionicModal, $timeout, Server, Common, ModelData, Types) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -9,10 +9,7 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
 
    var self = this;
 
-   // Open the login modal
-  self.login = function() {
-    self.modal.show();
-  };
+
 
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -24,6 +21,11 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
   // Form data for the login modal
   self.loginData = {};
   
+  // Open the login modal
+  self.login = function() {
+    self.modal.show();
+  };
+
 
   // Triggered in the login modal to close it
   self.closeLogin = function() {
@@ -83,6 +85,12 @@ angular.module('ser').controller('AppCtrl', ['$scope', '$ionicModal', '$timeout'
       //self.closeLogin();
       
       //Common.goTo('browse');
+    }
+
+
+    self.isMenuProfessional = function()
+    {
+        return Common.isMenuProfessional();
     }
 
 
