@@ -6,6 +6,9 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', functi
 
   self.clickBoton = function()
   {
+  	alert("1: " + cordova);
+  	alert("2: " + cordova.InAppBrowser);
+  	alert("3: " + cordova.InAppBrowser.open);
   	
   	//var fbAvailable = Utils.appTwitterAvailability();
 
@@ -25,7 +28,7 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', functi
     //window.open("fb://profile/" + ID, '_system');
     //window.open('https://www.google.es', '_system', 'location=no');
     //window.open("facebook://profile/" + ID, '_system');
-    window.open("twitter://user?screen_name=qordas", '_system');
+    cordova.InAppBrowser.open("twitter://user?screen_name=qordas", '_system');
     
     //window.open("https://www.facebook.com/choicefm1043");
 
