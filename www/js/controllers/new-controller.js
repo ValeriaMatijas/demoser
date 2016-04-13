@@ -4,6 +4,8 @@ angular.module('ser').controller('NewCtrl', ['$stateParams','Utils', function( $
   self.init = function()
   {
     console.log("INIT NEW: " + $stateParams.idNew);
+
+    self.content = "<p>esto es un parrafo a ver como se muestra</p>"
   }  
 
   self.clickBoton = function()

@@ -1,6 +1,8 @@
 <ion-view view-title="Detalle noticia">
   <ion-content>
     <h1>Detalle noticia</h1>
+    <div ng-bind-html="ctrl.content">
+    </div>
     <p ng-click="ctrl.clickBoton()">Clicame</p>
   </ion-content>
 </ion-view>
