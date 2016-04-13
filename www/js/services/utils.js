@@ -30,7 +30,8 @@ angular.module('ser').service('Utils', ['Configuration', function(Configuration)
 
 	
 		
-		if(typeof appAvailability != 'undefined')
+		//if(typeof appAvailability != 'undefined')
+		if(true)
 		{
 			alert("entrando...");
 			
