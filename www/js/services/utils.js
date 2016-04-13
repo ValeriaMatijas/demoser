@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ser').service('Utils', ['Configuration', '$cordovaAppAvailability', function(Configuration, $cordovaAppAvailability) 
+angular.module('ser').service('Utils', ['Configuration', function(Configuration) 
 {
 
 	var self = this;

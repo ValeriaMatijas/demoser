@@ -1,4 +1,4 @@
-angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cordovaInAppBrowser', function( $stateParams, Utils, $cordovaInAppBrowser) {
+angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', function( $stateParams, Utils) {
   var self = this;
 
  //console.log("$cordovaInAppBrowser: " + $cordovaInAppBrowser);
@@ -24,7 +24,7 @@ angular.module('ser').controller('PlaylistCtrl', ['$stateParams','Utils', '$cord
     var ID = "pepe";
     //window.open("fb://profile/" + ID, '_system');
     //window.open('https://www.google.es', '_system', 'location=no');
-    window.open("fb://profile/" + ID, '_system');
+    window.open("facebook://profile/" + ID, '_system');
     //window.open("twitter://user?screen_name=qordas", '_system');
     
     //window.open("https://www.facebook.com/choicefm1043");
