@@ -19,7 +19,8 @@
   <access origin="*"/>
 
   
-  <preference name="phonegap-version" value="cli-6.0.0" />
+  <!--<preference name="phonegap-version" value="cli-6.0.0" />-->
+  <preference name="phonegap-version" value="cli-5.2.0" />
   
    
   <preference name="webviewbounce" value="false"/>
@@ -88,11 +89,16 @@
 	<preference name="android-build-tool" value="gradle" /> 
   
     <!-- Core plugins -->
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.core.geolocation" />
+	<gap:plugin name="com.adobe.plugins.gaplugin" />
     <plugin name="org.apache.cordova.console" />
-    <plugin name="org.apache.cordova.device" />
+	
+    <!--<plugin name="org.apache.cordova.device" />-->
   
 	<!-- inappbrowser -->
 	<!--<plugin name="cordova-plugin-inappbrowser" source="npm" />-->
+	<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
 	
 	
 	  
